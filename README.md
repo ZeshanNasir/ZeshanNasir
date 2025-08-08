@@ -55,7 +55,7 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ZeshanNasir&layout=compact&theme=radical" alt="Top Languages" />
 </p>
 <p align="center">
-  <img src="https://github-readme-activity-graph.cyclic.app/graph?username=ZeshanNasir&theme=github-compact" alt="Activity Graph" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ZeshanNasir&theme=github-compact" alt="Activity Graph" />
 </p>
 
 ---
@@ -78,7 +78,7 @@
 
 ## ✨ Fun Facts
 
-- 🎸 Guitar hobbyist, digital artist, puzzle solver
+- 🤖 I love exploring the latest updates in AI and discovering creative ways to use it—from automating daily workflows to enhancing problem-solving and brainstorming how AI can improvise every aspect of our lives.
 - 🏕️ Hackathon & community event fan
 - 🧠 *Motto: Automate the boring, amplify the creative!*
 
@@ -87,3 +87,4 @@
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=4000&pause=500&color=1ABC9C&center=true&vCenter=true&width=500&lines=Let's+connect+and+create+something+amazing!;%F0%9F%92%BB+Thanks+for+visiting+my+profile+%21+%F0%9F%91%8B" />
 </p>
+
