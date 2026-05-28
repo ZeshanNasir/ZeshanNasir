@@ -44,6 +44,6 @@ My personal infrastructure is a proving ground for solving enterprise constraint
 2012  System Support Officer       Microtech Industries
 2020  Network & System Admin       SV Engineering
 2022  Associate System Admin       Optimizely
-2025  System Administrator         Optimizely          ← now
+2026  System Administrator         Optimizely          ← now
       └─ Bridging Support, Security & Infra · Data Reliability for AI
 ```
