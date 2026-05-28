@@ -18,9 +18,9 @@
 
 **Hi, I’m Zeshan.** I’m a System Administrator at Optimizely, working at the intersection of IT Support, Infrastructure, and Security. 
 
-My primary mandate is to think outside the box to fix systemic issues and reduce manual toil. I focus on bridging the gap between infrastructure and modern AI workflows to drive Service Desk ticket deflection. I’ve learned that AI initiatives fail without data reliability; an LLM will hallucinate if it feeds on rotting documentation. To solve this, I engineer the knowledge lifecycle in Confluence—enforcing strict metadata labeling, expiration protocols, and standardized templates. By defining these strict data schemas, I provide the deterministic foundation required by our automation teams (using Workato) and AI platforms (like Atlassian ROVO) to safely deploy ticket deflection without the risk of hallucination.
+My primary mandate is to architect solutions that permanently resolve systemic issues and eliminate manual toil. I focus on bridging the gap between infrastructure and modern AI workflows to drive Service Desk ticket deflection. I’ve learned that AI initiatives fail without data reliability; an LLM will hallucinate if it feeds on rotting documentation. To solve this, I engineer the knowledge lifecycle in Confluence—enforcing strict metadata labeling, expiration protocols, and standardized templates. By defining these strict data schemas, I provide the deterministic foundation required by our automation teams (using Workato) and AI platforms (like Atlassian ROVO) to safely deploy ticket deflection without the risk of hallucination.
 
-I apply this same discipline to my personal infrastructure. I use my homelab to experiment with Sovereign AI and zero-trust networking, finding ways to solve enterprise compliance headaches (GDPR, HIPAA, SOC2/SD). My environments are heavily automated (Python, Bash) and built to proactively research security incidents and eliminate data exfiltration risks.
+I apply this same rigor to my sovereign infrastructure. I use the Omega Cluster to architect zero-trust networks and experiment with local AI and zero-trust networking, finding ways to solve enterprise compliance headaches (GDPR, HIPAA, SOC2/SD). My environments are heavily automated (Python, Bash) and built to proactively research security incidents and eliminate data exfiltration risks.
 
 ---
 
