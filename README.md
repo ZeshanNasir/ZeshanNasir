@@ -1,6 +1,6 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=16&duration=2800&pause=900&color=00FF87&center=true&vCenter=true&width=680&lines=Senior+IT+Services+Specialist+%40+Optimizely;Building+local+AI+inference+on+Apple+Silicon;6-model+LLM+fleet+%C2%B7+oMLX+%C2%B7+FastAPI+%C2%B7+Textual+TUI;OPNsense+%C2%B7+Proxmox+%C2%B7+Tailscale+%C2%B7+100W+homelab;14%2B+years+%C2%B7+Associate+%E2%86%92+Senior+%C2%B7+Still+compiling)](https://github.com/ZeshanNasir)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=16&duration=2800&pause=900&color=00FF87&center=true&vCenter=true&width=680&lines=System+Administrator+%40+Optimizely;Building+Sovereign+Local+AI+Environments;Data+Reliability+Engineering+for+AI;Zero-Trust+ScaleTail+Mesh+Architecture;Removing+manual+toil+through+automation)](https://github.com/ZeshanNasir)
 
 </div>
 
@@ -16,113 +16,33 @@
 
 ---
 
-I run enterprise endpoint infrastructure at Optimizely — Azure, Intune, Jamf, M365 across macOS and Windows at scale. Four years in, promoted from Associate to Senior. In parallel, I build local AI inference systems on Apple Silicon: a 6-model fleet, a FastAPI reasoning bridge, a live Textual TUI dashboard, and a persistent memory chain. All offline. All production-grade. The two disciplines inform each other.
+**Hi, I’m Zeshan.** I’m a System Administrator at Optimizely, working at the intersection of IT Support, Infrastructure, and Security. 
+
+My primary mandate is to engineer solutions that reduce manual toil. I focus on implementing modern automation and AI workflows to drive Service Desk ticket deflection. I’ve learned that AI initiatives fail without data reliability; an LLM will hallucinate if it feeds on rotting documentation. To solve this, I engineer the knowledge lifecycle in Confluence—enforcing strict metadata labeling, expiration protocols, and standardized templates. This ensures that our automations (via Workato) and our RAG implementations (like Atlassian ROVO) serve only verified, structured truth to end-users.
+
+I apply this same discipline to my personal infrastructure. I use my homelab to experiment with Sovereign AI and zero-trust networking, finding ways to analyze sensitive data locally without relying on public cloud APIs. I don't automate just to save time; I engineer systems to remove error and eliminate security risks.
 
 ---
 
-## Currently Building
+## 🏗️ The Sovereign Laboratory (Omega Cluster)
 
-| Project | What | Status |
+My personal infrastructure is a proving ground for solving enterprise constraints—specifically data privacy, GPU bottlenecks, and network attack surfaces.
+
+| Architecture Pillar | The Engineering Problem Solved | Status |
 |---|---|---|
-| **Silicon Nexus** | Local AI inference OS — oMLX engine, 6-model fleet (Flash · Think · Code · Claude · Dense · General), FastAPI bridge, Textual TUI dashboard, HOT/WARM/COLD memory chain, encrypted vault, 13-command CLI | 🟢 Running |
-| **Homelab Cluster** | Proxmox nodes · OPNsense XG-125 firewall · HP ProCurve 12-port PoE switch · UniFi AP · Tailscale mesh · ~100W always-on | 🟡 Expanding |
-| **AI Workstation** | MS-02 Ultra · Intel Core 235HX · 96GB DDR5 · Intel Arc B50 · targeting 25B model inference at 128K context · 15 containers | 🔵 Planned Q2 2026 |
+| **Air-Gapped MLX Engine**<br>*(Mac M4 Pro · 48GB · 276GB/s)* | **Compliance & Speed:** Cloud AI analysis of sensitive data (Okta/Azure logs) violates compliance. I leverage native `ollama-mlx` and Apple Unified Memory to run 35B MoE models at 70 tok/s locally. This provides agentic-speed analysis of sensitive security data with zero cloud exfiltration risk. | 🟢 Active |
+| **CPU-Only Deep Inference**<br>*(ms-ultra-02 · Intel 235HX · 96GB)* | **GPU Independence:** Persistent AI workloads shouldn't require massive GPU budgets. I heavily tune `ik_llama.cpp` (Multi-Token Prediction, P-core pinning, `q8_0` KV cache) to force 35B models into standard DDR5 RAM, achieving 47 tok/s prefill for persistent local RAG and document intelligence. | 🟢 Locked |
+| **Zero-Trust Mesh Topology**<br>*(Proxmox · HP ProCurve 24-Port)* | **Attack Surface Reduction:** Traditional reverse proxies are vulnerabilities. I deploy a "ScaleTail" mesh topology. 20+ isolated utilities (Vaultwarden, Uptime Kuma) are fronted by dedicated Tailscale sidecars. The entire cluster is invisible to the internet, addressable only via authenticated MagicDNS. | 🟢 Locked |
+| **High Availability & OOB**<br>*(Corosync Quorum · OPNsense)* | **Resilience:** Building a 3-node Corosync quorum using a cloud VPS (QDevice) to prevent split-brain failure. Disaster recovery relies on hardware-level Out-of-Band (OOB) management (Intel vPro, NanoKVM) and fallback WireGuard tunnels to ensure constant remote access. | 🟡 In Progress |
 
 ---
 
 ## Career
 
-```
+```text
 2012  System Support Officer      Microtech Industries
 2020  Network & System Admin       SV Engineering
 2022  Associate System Admin       Optimizely
-2025  Senior IT Services Specialist Optimizely          ← now
-      └─ 4 years · Azure · Intune · Jamf · M365 · enterprise scale
-
-2024  Silicon Nexus                personal project     ← nights & weekends
-2026  Proxmox homelab + AI workstation build            ← active
+2025  System Administrator         Optimizely          ← now
+      └─ Bridging Support, Security & Infra · Data Reliability for AI
 ```
-
-MSc · Uppsala University · Stockholm, Sweden
-
----
-
-## Stack
-
-**Enterprise**
-
-![Azure](https://img.shields.io/badge/Azure-0089D6?style=flat-square&logo=microsoft-azure&logoColor=white)
-![Intune](https://img.shields.io/badge/Intune-0078D4?style=flat-square&logo=microsoft&logoColor=white)
-![Jamf](https://img.shields.io/badge/Jamf-0052CC?style=flat-square&logo=apple&logoColor=white)
-![Active Directory](https://img.shields.io/badge/Active_Directory-0078D4?style=flat-square&logo=microsoft&logoColor=white)
-![M365](https://img.shields.io/badge/M365-D83B01?style=flat-square&logo=microsoft-office&logoColor=white)
-![ServiceNow](https://img.shields.io/badge/ServiceNow-00BCD4?style=flat-square&logo=servicenow&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)
-![SCCM](https://img.shields.io/badge/SCCM-0078D4?style=flat-square&logo=microsoft&logoColor=white)
-
-**Homelab & Self-Hosted**
-
-![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=flat-square&logo=proxmox&logoColor=white)
-![OPNsense](https://img.shields.io/badge/OPNsense-D94F00?style=flat-square&logo=opnsense&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Tailscale](https://img.shields.io/badge/Tailscale-242424?style=flat-square&logo=tailscale&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
-![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white)
-
-**AI & Local Inference**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![MLX](https://img.shields.io/badge/MLX-Apple_Silicon-000?style=flat-square&logo=apple&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-000?style=flat-square)
-![LM Studio](https://img.shields.io/badge/LM_Studio-6C3483?style=flat-square)
-![Mem0](https://img.shields.io/badge/Mem0-memory_layer-1a1a2e?style=flat-square)
-
----
-
-## Repos
-
-| Repo | What | Visibility |
-|---|---|---|
-| [`ZeshanNasir.github.io`](https://zeshannasir.github.io) | Portfolio site | Public |
-| `infinity-notes` | Vault — session context, ops scripts, AI agent skills, git-encrypted secrets | Private |
-| `ops` | Automation scripts — PowerShell, Bash, endpoint management | Private |
-| `silicon-nexus` | Local AI inference stack — opening when ready | Coming |
-| `homelab` | Infrastructure docs — OPNsense, Proxmox, network topology | Planned |
-
----
-
-## Certifications
-
-`Jamf Certified Associate (2024)` &nbsp;·&nbsp; `HCIP Routing & Switching` &nbsp;·&nbsp; `Microsoft Office Specialist`
-
----
-
-## Philosophy
-
-> Infrastructure is trust. It either works when it matters or it doesn't — there's no partial credit in production.
-
-> I don't automate to save time. I automate to remove error. The standard you hold the output to is what separates ops from engineering.
-
----
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ZeshanNasir&show_icons=true&bg_color=0d1117&border_color=00ff87&icon_color=00ff87&title_color=00ff87&text_color=c9d1d9&hide_border=false)
-&nbsp;&nbsp;
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ZeshanNasir&layout=compact&bg_color=0d1117&border_color=00ff87&title_color=00ff87&text_color=c9d1d9&hide_border=false)
-
-</div>
-
----
-
-<div align="center">
-
-Open to AI infrastructure · cloud engineering · senior IT roles
-
-[zeshan.nasir@tuta.io](mailto:zeshan.nasir@tuta.io) &nbsp;·&nbsp; [linkedin.com/in/zeshannasir](https://linkedin.com/in/zeshannasir) &nbsp;·&nbsp; [zeshannasir.github.io](https://zeshannasir.github.io)
-
-*Stockholm, Sweden · MSc Uppsala University · 14+ years in IT*
-
-</div>
