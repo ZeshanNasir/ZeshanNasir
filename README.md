@@ -28,6 +28,16 @@ I apply the same discipline to my homelab. The Omega Cluster is where I pressure
 
 My personal infrastructure is a proving ground for solving enterprise constraints—specifically data privacy, GPU bottlenecks, compliance, and network attack surfaces.
 
+**The hardware — two Proxmox nodes plus an off-site quorum arbiter:**
+
+| Node | Role | Runs |
+|---|---|---|
+| **ms02** *(Intel 235HX · 64 GB DDR5-4800, 128 GB planned)* | AI workhorse | The full AI stack — Qwen3.6-35B LLM, Qdrant vector memory, n8n automation, Grafana/Prometheus/Vaultwarden, PentAGI red-team |
+| **hp260** | Control · DR cold-store · homelab | Second quorum node, backup target, utility services (ntfy / miniflux / homepage) |
+| **VPS QDevice** | Off-site quorum arbiter | Third Corosync vote — quorum survives either node going down |
+
+Gateway: **OPNsense XG-125** · L2: **HP 1810-24G** VLAN fanout · Tailscale `ts-serve` sidecars front internal apps; nothing is exposed to the internet.
+
 | Architecture Pillar | The Engineering Problem Solved | Status |
 |---|---|---|
 | **Air-Gapped MLX Engine**<br>*(Mac M4 Pro · 48GB · 273GB/s)* | **Compliance & Speed:** Cloud AI analysis of sensitive logs (Okta/Entra/Azure) is a GDPR/HIPAA problem. Native `ollama-mlx` on Apple Unified Memory runs Gemma4 (26B) and Qwen3.6 (35B MoE) at ~67 / ~61 tok/s locally — one model at a time, by policy, inside the 48 GB budget. Offline analysis of security incidents and access logs with zero cloud exfiltration. | 🟢 Active |
