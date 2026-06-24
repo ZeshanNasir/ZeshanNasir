@@ -1,6 +1,6 @@
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=16&duration=2800&pause=900&color=00FF87&center=true&vCenter=true&width=680&lines=System+Administrator+%40+Optimizely;Building+Sovereign+Local+AI+Environments;Data+Reliability+Engineering+for+AI;Zero-Trust+ScaleTail+Mesh+Architecture;Removing+manual+toil+through+automation)](https://github.com/ZeshanNasir)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=16&duration=2800&pause=900&color=00FF87&center=true&vCenter=true&width=720&lines=System+Administrator+%40+Optimizely;Data+Reliability+for+Automation+and+AI;Confluence+Governance+for+Ticket+Deflection;Measured+Proxmox+and+MLX+Local-RAG+Homelab;Zero-Trust+Tailscale+Mesh)](https://github.com/ZeshanNasir)
 
 </div>
 
@@ -24,9 +24,9 @@ I apply the same discipline to my homelab. The Omega Cluster is where I pressure
 
 ---
 
-## 🏗️ The Sovereign Laboratory (Omega Cluster)
+## 🏗️ Omega Cluster — the proving ground
 
-My personal infrastructure is a proving ground for solving enterprise constraints—specifically data privacy, GPU bottlenecks, compliance, and network attack surfaces.
+My homelab is where I pressure-test enterprise constraints in real infrastructure — data privacy, GPU bottlenecks, compliance, and network attack surface.
 
 **The hardware — two Proxmox nodes plus an off-site quorum arbiter:**
 
