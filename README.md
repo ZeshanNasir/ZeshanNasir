@@ -6,7 +6,7 @@
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/zeshannasir)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/zeshan-nasir)
 [![Portfolio](https://img.shields.io/badge/Portfolio-zeshannasir.github.io-111?style=flat-square&logo=githubpages&logoColor=white)](https://zeshannasir.github.io)
 [![X](https://img.shields.io/badge/X-000?style=flat-square&logo=x&logoColor=white)](https://twitter.com/zeshannasir)
 [![Email](https://img.shields.io/badge/Email-zeshan.nasir%40tuta.io-6D28D9?style=flat-square&logo=tutanota&logoColor=white)](mailto:zeshan.nasir@tuta.io)
@@ -40,7 +40,7 @@ Gateway: **OPNsense XG-125** · L2: **HP 1810-24G** VLAN fanout · Tailscale `ts
 
 | Architecture Pillar | The Engineering Problem Solved | Status |
 |---|---|---|
-| **Air-Gapped MLX Engine**<br>*(Mac M4 Pro · 48GB · 273GB/s)* | **Compliance & Speed:** Cloud AI analysis of sensitive logs (Okta/Entra/Azure) is a GDPR/HIPAA problem. Native `ollama-mlx` on Apple Unified Memory runs Gemma4 (26B) and Qwen3.6 (35B MoE) at ~67 / ~61 tok/s locally — one model at a time, by policy, inside the 48 GB budget. Offline analysis of security incidents and access logs with zero cloud exfiltration. | 🟢 Active |
+| **Local MLX Inference Engine**<br>*(Mac M4 Pro · 48GB · 273GB/s)* | **Compliance & Speed:** Cloud AI analysis of sensitive logs (Okta/Entra/Azure) is a GDPR/HIPAA problem. Native `ollama-mlx` on Apple Unified Memory runs Gemma4 (26B) and Qwen3.6 (35B MoE) at ~67 / ~61 tok/s locally — one model at a time, by policy, inside the 48 GB budget. Offline analysis of security incidents and access logs with zero cloud exfiltration. | 🟢 Active |
 | **CPU-Only Deep Inference**<br>*(ms-ultra-02 · Intel 235HX · 64GB DDR5-4800)* | **GPU independence, measured honestly:** `ik_llama.cpp`, CPU-only (`-ngl 0`, 6 cores, flash-attention, `mlock`), asymmetric KV cache (`K=q8_0` / `V=q4_0`) runs a 35B-A3B MoE in 64 GB of DDR5-4800 (128 GB upgrade planned). **Measured: ~15 tok/s decode** — the memory-bandwidth ceiling, not a tuning gap: an A3B MoE reads ~3B params/token, so throughput is RAM-bandwidth bound and a GPU offload wouldn't change it. Prefill 60–167 tok/s, sub-second TTFT on short prompts. Enough for persistent local RAG. *(measured 2026-06-14)* | 🟢 Locked |
 | **Zero-Trust Mesh Topology**<br>*(Proxmox · HP 1810-24G)* | **Attack Surface Reduction:** A "ScaleTail" mesh — 20+ isolated utilities (Vaultwarden, Uptime Kuma) fronted by dedicated Tailscale `ts-serve` sidecars. The cluster is not exposed to the internet; tailnet apps are reachable only via authenticated MagicDNS. | 🟢 Locked |
 | **Autonomous Orchestration**<br>*(n8n · Python · Miniflux)* | **Proactive Monitoring:** n8n pipelines and custom `ai-local-skills` connected to RSS/threat feeds aggregate and filter security and threat intelligence, feeding the local analysis environments. The agent (Hermes) proposes with rollback and executes nothing risky without my approval. | 🟢 Locked |
@@ -51,9 +51,9 @@ Gateway: **OPNsense XG-125** · L2: **HP 1810-24G** VLAN fanout · Tailscale `ts
 ## Career
 
 ```text
-2012  System Support Officer       Microtech Industries
-2020  Network & System Admin       SV Engineering
-2022  Associate System Admin       Optimizely
-2026  System Administrator         Optimizely          ← now
+2012  IT Systems & NOC Support Eng   MicroTech Industries · Lahore
+2020  Network & System Admin         Levi Strauss & Co. (via SV Engineering) · Lahore
+2022  Associate System Admin         Optimizely · Stockholm
+2026  System Administrator           Optimizely · Stockholm   ← now
       └─ Bridging Support, Security & Infra · Data Reliability for AI
 ```
