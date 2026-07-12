@@ -31,10 +31,81 @@ Working one layer below the model, on the data it reads.
        and machine-parseable.
 
 03  Clean inputs, then everything else.
-    └─ Confluence governance feeding automation at work. A private RAG cluster
-       at home that returns UNKNOWN instead of inventing. Both depend
+    └─ Confluence governance feeding Workato and ROVO at work. A private RAG
+       cluster at home that returns UNKNOWN instead of inventing. Both depend
        on the same thing: a governed, reliable data source.
 ```
 
 ---
-**[ View the full operational architecture at zeshans.dev ](https://zeshans.dev)**
+
+### `[INFRASTRUCTURE_NODES]`
+
+| `[Node_ID]` | `[Focus_Domain]` | `[Core_Stack]` | `[System_State]` |
+| :--- | :--- | :--- | :--- |
+| `SYSTEM_01: OMEGA_CLUSTER` | Bare-metal Proxmox HA. 2-node cluster + VPS QDevice for split-brain prevention. | Proxmox VE, Corosync, Tailscale mesh, Caddy HTTP/3, daily off-site backup to GDrive. | `NOMINAL` |
+| `SYSTEM_02: HERMES_AGENT` | Local-only RAG agent. Telegram interface, vector retrieval, CPU-bound inference. | Qwen 3.6-35B (ik_llama.cpp), Qdrant vector DB, n8n orchestration, asymmetric KV cache (q8_0/q4_0). | `NOMINAL` |
+| `SYSTEM_03: KNOWLEDGE_GOVERNANCE` | Confluence lifecycle engineering. Metadata labeling, expiration protocols, machine-parseable sources. | Atlassian ROVO, Workato orchestration bus, automated Jira ticketing, Slack alerting. | `NOMINAL` |
+
+---
+
+### `[CLUSTER_TOPOLOGY]`
+
+```text
+                    ┌─────────────────────────────┐
+                    │   VPS (QDevice)              │
+                    │   Corosync Vote · Caddy Edge │
+                    └──────────┬──────────┬────────┘
+                   Tailscale   │          │   Tailscale
+                      Mesh     │          │      Mesh
+              ┌────────────────┘          └────────────────┐
+              │                                            │
+    ┌─────────▼──────────────┐           ┌─────────────────▼────────┐
+    │ ms02                   │ Corosync  │ hp260                    │
+    │ Intel Ultra 5 235HX    │◄─────────►│ Intel i5-6200U           │
+    │ 64 GB DDR5-4800        │  LINK0    │ 32 GB DDR4               │
+    │ Role: AI Inference     │           │ Role: Management / DR    │
+    ├────────────────────────┤           ├──────────────────────────┤
+    │ CT401 Qwen 3.6-35B     │           │ CT201 ntfy/Miniflux/Memos│
+    │ CT402 Qdrant            │           │ CT301 Homepage dashboard │
+    │ CT403 n8n/Paperless     │           │ Uptime Kuma · DR store   │
+    │ CT404 Grafana           │           │ Daily → Google Drive     │
+    │ CT405 PentAGI           │           └──────────────────────────┘
+    │ CT406 Hermes            │
+    └─────────────────────────┘
+```
+
+---
+
+### `[PERFORMANCE_TELEMETRY]`
+
+```text
+CT401 Inference · ik_llama.cpp · Measured 2026-06-14
+
+  Decode       ~15 tok/s     RAM-bandwidth ceiling (DDR5-4800, single-socket)
+  Prefill      60–167 tok/s  Scales with prompt length and batch size
+  TTFT         0.3s short    ~7s at 1171 tokens
+  KV Cache     K=q8_0/V=q4_0 Asymmetric quantization, 128K context in 64 GB
+```
+
+---
+
+### `[CAREER_TIMELINE]`
+
+```text
+2012  IT Systems & NOC Support Eng   MicroTech Industries · Lahore
+2020  Network & System Admin         Levi Strauss & Co. (via SV Eng) · Lahore
+2022  Associate System Admin         Optimizely · Stockholm
+2024  Systems Engineer               Optimizely · Stockholm   ← current
+      └─ Focus: Platform Infrastructure, Data Reliability, Zero-Trust Mesh
+```
+
+---
+
+### `[TELEMETRY_INGRESS]`
+
+* **Primary Node:** [zeshans.dev](https://zeshans.dev)
+* **Professional Dossier:** [LinkedIn Profile](https://www.linkedin.com/in/zeshan-nasir)
+
+---
+
+<sub>Last synchronized: 2026-07-12 · Telemetry aligned with <a href="https://zeshans.dev">zeshans.dev</a></sub>
