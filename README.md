@@ -103,7 +103,7 @@ CT401 Inference · ik_llama.cpp · Measured 2026-06-14
 ### `[TELEMETRY_INGRESS]`
 
 * **Primary Node:** [zeshans.dev](https://zeshans.dev)
-* **Professional Dossier:** [LinkedIn Profile](https://linkedin.com/in/zeshannasir)
+* **Professional Dossier:** [LinkedIn Profile](https://www.linkedin.com/in/zeshan-nasir)
 
 ---
 
