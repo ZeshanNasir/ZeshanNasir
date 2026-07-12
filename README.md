@@ -100,16 +100,10 @@ CT401 Inference · ik_llama.cpp · Measured 2026-06-14
 
 ---
 
-### `[TELEMETRY_LINKS]`
+### `[TELEMETRY_INGRESS]`
 
-```text
-┌────────────────────────────────────────────────────────────────────────┐
-│  [ Primary Observability Ingress ] ──> https://zeshans.dev             │
-│  [ Secure Dossier Download ]       ──> https://zeshans.dev/resume.pdf  │
-│  [ LinkedIn Node ]                 ──> linkedin.com/in/zeshan-nasir    │
-│  [ Source Repository ]             ──> github.com/ZeshanNasir          │
-└────────────────────────────────────────────────────────────────────────┘
-```
+* **Primary Node:** [zeshans.dev](https://zeshans.dev)
+* **Professional Dossier:** [LinkedIn Profile](https://linkedin.com/in/zeshannasir)
 
 ---
 
