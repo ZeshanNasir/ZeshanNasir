@@ -4,7 +4,7 @@
 ├──────────────────────────────────────────────────────────────────────────┤
 │                                                                          │
 │ [NODE_IDENTIFIER] : github.com/ZeshanNasir                               │
-│ [CURRENT_ROLE]    : Systems Engineer @ Optimizely                        │
+│ [CURRENT_ROLE]    : System Administrator @ Optimizely                        │
 │ [DEPLOY_REGION]   : Stockholm, SE                                        │
 │ [FOCUS]           : Infrastructure Engineering & Automation Systems      │
 │ [ARCHITECTURE]    : Private AI Workloads | Zero-Trust Mesh               │
@@ -13,7 +13,7 @@
 └──────────────────────────────────────────────────────────────────────────┘
 ```
 
-**Systems Engineer** architecting data reliability, bare-metal Proxmox clusters, and zero-trust mesh networks.
+**System Administrator** architecting data reliability, bare-metal Proxmox clusters, and zero-trust mesh networks.
 Working one layer below the model, on the data it reads.
 
 ---
@@ -95,8 +95,7 @@ CT401 Inference · ik_llama.cpp · Measured 2026-06-14
 2012  IT Systems & NOC Support Eng   MicroTech Industries · Lahore
 2020  Network & System Admin         Levi Strauss & Co. (via SV Eng) · Lahore
 2022  Associate System Admin         Optimizely · Stockholm
-2024  System Administrator           Optimizely · Stockholm
-2026  Systems Engineer               Optimizely · Stockholm   ← current
+2026  System Administrator           Optimizely · Stockholm   ← current
       └─ Focus: Platform Infrastructure, Data Reliability, Zero-Trust Mesh
 ```
 
