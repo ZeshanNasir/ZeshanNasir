@@ -4,7 +4,7 @@
 ╠══════════════════════════════════════════════════════════════════════════╣
 ║                                                                          ║
 ║  [NODE_IDENTIFIER] : github.com/ZeshanNasir                              ║
-║  [CURRENT_ROLE]    : Platform Engineer @ Optimizely                      ║
+║  [CURRENT_ROLE]    : System Administrator @ Optimizely                   ║
 ║  [DEPLOY_REGION]   : Stockholm, SE                                       ║
 ║  [EXPERIENCE]      : 14 yrs in IT since 2012                             ║
 ║  [ARCHITECTURE]    : 9-Node Bare-Metal LXC Cluster | Zero-Trust Mesh     ║
@@ -12,7 +12,7 @@
 ╚══════════════════════════════════════════════════════════════════════════╝
 ```
 
-Data reliability, bare-metal Proxmox clustering, and zero-trust mesh architectures.
+System Administrator architecting data reliability, bare-metal Proxmox clusters, and zero-trust mesh networks.
 Working one layer below the model, on the data it reads.
 
 ---
@@ -94,8 +94,8 @@ CT401 Inference · ik_llama.cpp · Measured 2026-06-14
 2012  IT Systems & NOC Support Eng   MicroTech Industries · Lahore
 2020  Network & System Admin         Levi Strauss & Co. (via SV Eng) · Lahore
 2022  Associate System Admin         Optimizely · Stockholm
-2026  Platform Engineer              Optimizely · Stockholm   ← current
-      └─ Data Reliability · Infrastructure · Zero-Trust Architecture
+2024  System Administrator           Optimizely · Stockholm   ← current
+      └─ Focus: Platform Infrastructure, Data Reliability, Zero-Trust Mesh
 ```
 
 ---
