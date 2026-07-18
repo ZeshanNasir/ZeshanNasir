@@ -9,6 +9,7 @@
 │ [FOCUS]           : Infrastructure Engineering & Automation Systems      │
 │ [ARCHITECTURE]    : Private AI Workloads | Zero-Trust Mesh               │
 │ [LIVE_DOSSIER]    : https://zeshans.dev                                  │
+| [ORCID]           : https://orcid.org/0009-0007-1217-2124          |
 │                                                                          │
 └──────────────────────────────────────────────────────────────────────────┘
 ```
