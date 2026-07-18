@@ -108,4 +108,4 @@ CT401 Inference · ik_llama.cpp · Measured 2026-06-14
 
 ---
 
-<sub>Last synchronized: 2026-07-12 · Telemetry aligned with <a href="https://zeshans.dev">zeshans.dev</a></sub>
+<sub>Last synchronized: 2026-07-18 · Telemetry aligned with <a href="https://zeshans.dev">zeshans.dev</a> and canonical LinkedIn profile.</sub>
