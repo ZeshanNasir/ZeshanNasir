@@ -13,7 +13,7 @@
 └──────────────────────────────────────────────────────────────────────────┘
 ```
 
-**System Administrator** architecting data reliability, bare-metal Proxmox clusters, and zero-trust mesh networks.
+**System Administrator** engineering data reliability, bare-metal Proxmox clusters, and zero-trust mesh networks.
 Working one layer below the model, on the data it reads.
 
 ---
