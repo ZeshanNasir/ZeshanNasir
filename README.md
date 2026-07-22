@@ -6,8 +6,8 @@
 │ [NODE_IDENTIFIER] : github.com/ZeshanNasir                               │
 │ [CURRENT_ROLE]    : System Administrator @ Optimizely                        │
 │ [DEPLOY_REGION]   : Stockholm, SE                                        │
-│ [FOCUS]           : Systems Operations, Endpoint Fleets & Automation     │
-│ [PRIVATE_LAB]    : Omega (2-Node Proxmox HA, Tailscale Mesh, Local AI)   │
+│ [FOCUS]           : Systems Operations, Endpoint Management, Automation │
+│ [PRIVATE_LAB]    : Omega - Proxmox, Tailscale, Infrastructure Experiments │
 │ [LIVE_DOSSIER]    : https://zeshans.dev                                  │
 | [ORCID]           : https://orcid.org/0009-0007-1217-2124          |
 │                                                                          │
