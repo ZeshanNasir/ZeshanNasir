@@ -6,15 +6,15 @@
 │ [NODE_IDENTIFIER] : github.com/ZeshanNasir                               │
 │ [CURRENT_ROLE]    : System Administrator @ Optimizely                        │
 │ [DEPLOY_REGION]   : Stockholm, SE                                        │
-│ [FOCUS]           : Infrastructure Engineering & Automation Systems      │
-│ [ARCHITECTURE]    : Private AI Workloads | Zero-Trust Mesh               │
+│ [FOCUS]           : Systems Operations, Endpoint Fleets & Automation     │
+│ [PRIVATE_LAB]    : Omega (2-Node Proxmox HA, Tailscale Mesh, Local AI)   │
 │ [LIVE_DOSSIER]    : https://zeshans.dev                                  │
 | [ORCID]           : https://orcid.org/0009-0007-1217-2124          |
 │                                                                          │
 └──────────────────────────────────────────────────────────────────────────┘
 ```
 
-**System Administrator** engineering data reliability, bare-metal Proxmox clusters, and zero-trust mesh networks.
+**System Administrator** operating enterprise IT systems, endpoint platforms, automation workflows, and private lab infrastructure.
 Working one layer below the model, on the data it reads.
 
 ---
