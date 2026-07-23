@@ -6,10 +6,10 @@
 │ [NODE_IDENTIFIER] : github.com/ZeshanNasir                               │
 │ [CURRENT_ROLE]    : System Administrator @ Optimizely                        │
 │ [DEPLOY_REGION]   : Stockholm, SE                                        │
-│ [FOCUS]           : Systems Operations, Endpoint Management, Automation │
-│ [PRIVATE_LAB]    : Omega - Proxmox, Tailscale, Infrastructure Experiments │
+│ [FOCUS]           : Systems Operations, Endpoint Management, Automation  │
+│ [PRIVATE_LAB]     : Omega - Proxmox, Tailscale, Infrastructure Experiments│
 │ [LIVE_DOSSIER]    : https://zeshans.dev                                  │
-| [ORCID]           : https://orcid.org/0009-0007-1217-2124          |
+│ [ORCID]           : https://orcid.org/0009-0007-1217-2124                │
 │                                                                          │
 └──────────────────────────────────────────────────────────────────────────┘
 ```
@@ -43,8 +43,8 @@ Working one layer below the model, on the data it reads.
 
 | `[Node_ID]` | `[Focus_Domain]` | `[Core_Stack]` | `[System_State]` |
 | :--- | :--- | :--- | :--- |
-| `SYSTEM_01: OMEGA_CLUSTER` | Bare-metal Proxmox HA. 2-node cluster + VPS QDevice for split-brain prevention. | Proxmox VE, Corosync, Tailscale mesh, Caddy HTTP/3, daily off-site backup to GDrive. | `NOMINAL` |
-| `SYSTEM_02: HERMES_AGENT` | Local-only RAG agent. Telegram interface, vector retrieval, CPU-bound inference. | Qwen 3.6-35B (ik_llama.cpp), Qdrant vector DB, n8n orchestration, asymmetric KV cache (q8_0/q4_0). | `NOMINAL` |
+| `SYSTEM_01: OMEGA_CLUSTER` | Bare-metal Proxmox HA. 3-node cluster (hp260, ms02, VPS QDevice). | Proxmox VE, Corosync, Tailscale mesh, Caddy HTTP/3, PBS daily backup. | `NOMINAL` |
+| `SYSTEM_02: HERMES_AGENT` | Local-only RAG agent. Telegram interface, vector retrieval, LLM inference. | Qwen 3.6-35B GGUF (Port 8080 API), Qdrant vector DB, n8n orchestration. | `NOMINAL` |
 | `SYSTEM_03: KNOWLEDGE_GOVERNANCE` | Confluence lifecycle engineering. Metadata labeling, expiration protocols, machine-parseable sources. | Atlassian ROVO, Workato orchestration bus, automated Jira ticketing, Slack alerting. | `NOMINAL` |
 
 ---
@@ -66,12 +66,12 @@ Working one layer below the model, on the data it reads.
     │ 64 GB DDR5-4800        │  LINK0    │ 32 GB DDR4               │
     │ Role: AI Inference     │           │ Role: Management / DR    │
     ├────────────────────────┤           ├──────────────────────────┤
-    │ CT401 Qwen 3.6-35B     │           │ CT201 ntfy/Miniflux/Memos│
-    │ CT402 Qdrant            │           │ CT301 Homepage dashboard │
-    │ CT403 n8n/Paperless     │           │ Uptime Kuma · DR store   │
-    │ CT404 Grafana           │           │ Daily → Google Drive     │
-    │ CT405 PentAGI           │           └──────────────────────────┘
-    │ CT406 Hermes            │
+    │ CT401 Qwen 3.6-35B GGUF│           │ CT101 Jellyfin / Qdrant  │
+    │ CT402 Qdrant            │           │ CT301 Dockge / UniFi     │
+    │ CT403 n8n/Paperless     │           │ Uptime Kuma (Port 3310)  │
+    │ CT404 Vaultwarden       │           │ PBS VM100 Daily Backup   │
+    │ CT405 Security Lab      │           └──────────────────────────┘
+    │ CT406 Hermes Agent     │
     └─────────────────────────┘
 ```
 
@@ -80,12 +80,12 @@ Working one layer below the model, on the data it reads.
 ### `[PERFORMANCE_TELEMETRY]`
 
 ```text
-CT401 Inference · ik_llama.cpp · Measured 2026-06-14
+CT401 Inference · Qwen 3.6 35B GGUF · Measured 2026-07-23
 
+  Endpoint     http://192.168.20.21:8080/v1 (OpenAI-Compatible API)
+  Context      131,072 Tokens (131K) Context Window
   Decode       ~15 tok/s     RAM-bandwidth ceiling (DDR5-4800, single-socket)
   Prefill      60–167 tok/s  Scales with prompt length and batch size
-  TTFT         0.3s short    ~7s at 1171 tokens
-  KV Cache     K=q8_0/V=q4_0 Asymmetric quantization, 128K context in 64 GB
 ```
 
 ---
@@ -106,7 +106,8 @@ CT401 Inference · ik_llama.cpp · Measured 2026-06-14
 
 * **Primary Node:** [zeshans.dev](https://zeshans.dev)
 * **Professional Dossier:** [LinkedIn Profile](https://www.linkedin.com/in/zeshan-nasir)
+* **ORCID Dossier:** [ORCID 0009-0007-1217-2124](https://orcid.org/0009-0007-1217-2124)
 
 ---
 
-<sub>Last synchronized: 2026-07-22 · Telemetry aligned with <a href="https://zeshans.dev">zeshans.dev</a> and canonical LinkedIn profile.</sub>
+<sub>Last synchronized: 2026-07-23 · Telemetry aligned with <a href="https://zeshans.dev">zeshans.dev</a> and canonical LinkedIn profile.</sub>
