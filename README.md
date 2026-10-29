@@ -1,26 +1,22 @@
 # Zeshan Nasir
 
-**System Administrator · Enterprise IT, Identity & Operational Knowledge**
+**System Administrator · Atlassian AI & Automation · Stockholm, Sweden**
 
-I work in enterprise IT operations: identity and endpoint administration and Service Desk support. I also improve how operational knowledge is maintained and used, so common requests are resolved the same way every time and exceptions reach the right owner.
+Working across enterprise Atlassian systems (Jira, JSM, Confluence), operational knowledge governance, and cloud identity at Optimizely. I automate documentation lifecycles, test workflows in sandboxes, and build tooling to ensure enterprise AI assistants (Atlassian Rovo) retrieve verified ground truth.
 
-## Focus Areas
+### Public Repositories
 
-- **Enterprise IT:** identity and access, endpoint management with Jamf and Intune, and Service Desk operations.
-- **Knowledge and workflows:** documentation lifecycle, ownership, approval boundaries and escalation.
-- **Local inference:** measuring what local AI models can do for engineering work, and where they stop.
+- [**ai-local**](https://github.com/ZeshanNasir/ai-local) — Synthetic benchmark harness for Apple Silicon: measures token throughput (prefill/eval), memory pressure, and model accuracy for local Ollama runtimes.
+- [**zeshannasir.com**](https://github.com/ZeshanNasir/zeshannasir.com) — Source for personal engineering site: zero-framework static HTML5/CSS, Caddy edge configuration, and automated CI smoke tests.
 
-## Engineering Approach
+### Systems & Stack
 
-- Keep the source of truth, ownership and lifecycle explicit.
-- Judge a workflow by the whole request: clarification, approval, resolution and escalation.
-- Record measurement conditions and limitations alongside results.
-- Distinguish configured backups from verified restores.
+- **Atlassian Stack:** Confluence Cloud, Jira Service Management, Jira Software, Atlassian Rovo, Automation for Jira, Claude.
+- **Identity & Fleet:** Microsoft Entra ID (Conditional Access, MFA), Okta, Microsoft Intune, Jamf Pro.
+- **Infrastructure & Systems:** Linux, Proxmox VE, Apple Silicon / Metal, WireGuard, Bash, Python, Git.
 
-## Project
+---
 
-[**ai-local**](https://github.com/ZeshanNasir/ai-local) measures the speed, memory use and task accuracy of local AI models on an Apple Silicon Mac. One command runs a short benchmark on your own machine.
-
-## Background
-
-14 years across IT support, systems administration, networking and infrastructure operations, including NOC work. At Optimizely since 2022.
+- 🌐 **Portfolio & Case Studies:** [zeshannasir.com](https://zeshannasir.com)
+- 💼 **LinkedIn:** [linkedin.com/in/zeshan-nasir](https://linkedin.com/in/zeshan-nasir)
+- ✉️ **Contact:** [contact@zeshannasir.com](mailto:contact@zeshannasir.com)
