@@ -7,7 +7,6 @@ Working across enterprise Atlassian systems (Jira, JSM, Confluence), operational
 ### Public Repositories
 
 - [**ai-local**](https://github.com/ZeshanNasir/ai-local) — Synthetic benchmark harness for Apple Silicon: measures token throughput (prefill/eval), memory pressure, and model accuracy for local Ollama runtimes.
-- [**zeshannasir.com**](https://github.com/ZeshanNasir/zeshannasir.com) — Source for personal engineering site: zero-framework static HTML5/CSS, Caddy edge configuration, and automated CI smoke tests.
 
 ### Systems & Stack
 
