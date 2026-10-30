@@ -28,7 +28,7 @@ Measured on an M4 Pro with 48 GB on 2026-10-09. Each model ran every task three 
 
 [ai-local](https://github.com/ZeshanNasir/ai-local) covers the workstation only. The figures below come from my own test runs and lab, not from that repository.
 
-#### Workstation · MacBook Pro M4 Pro, 48 GB
+### Workstation · MacBook Pro M4 Pro, 48 GB
 
 | Metric | Specification |
 | :--- | :--- |
@@ -36,7 +36,7 @@ Measured on an M4 Pro with 48 GB on 2026-10-09. Each model ran every task three 
 | **Job** | Interactive engineering: code audit, subagent loops |
 | **Measured** | 100/100 Tier S · 1,176–1,776 tok/s prefill · 82–105 tok/s decode · 22 GB weights in RAM, zero swap |
 
-#### Continuous ops · Minisforum MS-02 Ultra (Core Ultra 5, 6 P-cores)
+### Continuous ops · Minisforum MS-02 Ultra (Core Ultra 5, 6 P-cores)
 
 | Metric | Specification |
 | :--- | :--- |
