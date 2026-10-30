@@ -13,14 +13,14 @@ Leading Atlassian AI, workflow automation, and documentation governance across J
 
 ### Local AI Architecture & Compute Tiering
 
-Routing routine high-volume engineering tasks locally eliminates recurring cloud token bills and guarantees zero data egress.
+Routing routine high-volume engineering tasks locally removes recurring cloud token bills. Runtimes bind to loopback only; network egress is audited separately.
 
 | Plane | Hardware & Power | Runtime & Fleet | Purpose & Measured Performance |
 | :--- | :--- | :--- | :--- |
 | **Workstation** | MacBook Pro M4 Pro<br>`48 GB Unified RAM` | Ollama (MLX)<br>`flint:40b` · `nemotron:e4b` | **Interactive Engineering:** Deep code audit, subagent loops.<br>• 90–105 tok/s decode · 100/100 Tier S benchmark · Zero swap |
 | **Continuous Ops** | Minisforum MS-02 Ultra<br>`Intel Core Ultra 5 (6 P-cores)`<br>`~20W wall power` | `ik_llama.cpp` (AVX-VNNI)<br>`Ling-3.0-tiny` (MoE) | **24/7 Autonomous Services:** MCP tools, n8n triage, Home Assistant.<br>• Sub-0.2s TTFT · 511 tok/s prefill · 131K context in 7.5 GB RAM |
 
-> **Enterprise ROI:** Fixed workstation CapEx (approx. $75–$80/month per seat amortized over 4 years) replaces variable cloud token bills with $0.00 marginal cost per token and 100% loopback data residency for sensitive HR, legal, and incident logs.
+> **Enterprise ROI:** Fixed workstation CapEx (approx. $75–$80/month per seat amortized over 4 years) replaces variable cloud token bills with $0.00 marginal cost per token for routine developer loops.
 
 ---
 
