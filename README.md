@@ -24,12 +24,12 @@ Deterministic, reproducible evaluation of quantized open-weight models on Apple 
 
 ### 🛠️ Systems & Technical Architecture
 
-| Domain | Systems & Tooling | Focus & Implementation |
+| Domain | Systems & Tooling | Focus & Operational Reality |
 | :--- | :--- | :--- |
-| **Atlassian AI & Workflows** | Confluence Cloud · JSM · Jira · Atlassian Rovo · Risotto | Documentation lifecycles, automated page quarantine, Tier-0 self-service deflection & approval gate boundaries. |
-| **Identity & Access Plane** | Microsoft Entra ID · Okta SSO / MFA · Conditional Access | Identity governance, phishing-resistant authentication, lifecycle provisioning & RBAC baselines. |
-| **Endpoint Fleet Management** | Microsoft Intune · Jamf Pro · FileVault · BitLocker | Zero-touch enrollment, compliance rings, disk encryption enforcement & hardware inventory triage. |
-| **Private Infrastructure & Lab** | Linux · Apple Silicon Metal · Proxmox VE · WireGuard | Multi-node hypervisors, service isolation, network egress auditing & local LLM inference runtimes. |
+| **Atlassian AI & Governance** | Confluence Cloud · JSM · Jira · Atlassian Rovo · Risotto | Documentation lifecycles, automated obsolete quarantine, Tier-0 self-service deflection & approval boundaries. |
+| **Identity & Fleet Operations** | Microsoft Entra ID · Okta · Microsoft Intune · Jamf Pro | Enterprise identity & access workflows, macOS and Windows fleet configurations, hardware inventory & Service Desk escalations. |
+| **Local AI Inference (`ai-local`)** | Apple Silicon M4 Pro (48GB) · Ollama MLX · Metal | One-Hot VRAM fleet: **Qwen** (`qwen3.6:35b-mlx`, 256K) for systems reasoning; **Gemma** (`gemma4:26b-mlx`, 256K) for vision & intake. |
+| **Private Infrastructure Lab** | Linux · Proxmox VE · WireGuard · PBS | Two-node hypervisor cluster, service isolation, network egress auditing & empirical backup restore testing. |
 
 ---
 
