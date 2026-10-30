@@ -7,7 +7,7 @@ Leading enterprise identity, documentation governance, and AI-assisted workflows
 
 ### Local AI & Empirical Inference
 
-Frontier cloud models excel at high-uncertainty system design, but routing repetitive, high-volume, or sensitive workloads (log triage, code review, AST diffs, internal automation) to paid APIs introduces unnecessary recurring token costs and data egress risk.
+Frontier cloud models excel at high-uncertainty system design, but routing repetitive, high-volume, or sensitive workloads (incident logs, code reviews, AST diffs, internal automation) to paid APIs introduces unnecessary recurring token costs and data egress risk.
 
 I design and measure zero-egress, hardware-aligned local inference architectures across two distinct physical planes:
 
@@ -18,6 +18,7 @@ Evaluated via **[ai-local](https://github.com/ZeshanNasir/ai-local)**. Native Ol
 - **Subagent Loops & Triage:** `nemotron-3.5-bolt:e4b`. 105–123 tok/s decode, 510 tok/s prefill.
 - **Multimodal & Vision:** `gemma4:26b-mlx` (70+ tok/s) and `qwen3.6:35b-mlx` (72–85 tok/s).
 - **Dense Embeddings & Policy Gates:** `embeddinggemma-2:740m` (<1.5 GB VRAM) and `tev1:4b-mxfp8` (single-forward decision classification).
+- **Sustained Context Defense:** FP16 KV-caches cause swap thrashing past 64K tokens. Quantized 8-bit KV buffers (`OLLAMA_KV_CACHE_TYPE=q8_0`) halve cache footprint, sustaining 64K–100K token sessions in unified RAM without swap.
 
 #### 2. Infrastructure Plane — Intel Core Ultra CPU (MS02 Homelab / 23W Wall Power)
 Continuous deterministic background operations without a 300W dedicated GPU rig. Runs on an Intel Core Ultra 5 235HX pinned to 6 physical Performance cores (`cpuset 0-5`). Idles at ~8.5–9.5W CPU package power (~20–23W total wall draw) at ~43°C.
@@ -25,6 +26,10 @@ Continuous deterministic background operations without a 300W dedicated GPU rig.
 - **The Bandwidth Bottleneck:** Standard CPU inference engines choke on high-context FP16 KV-caches, causing severe memory bandwidth starvation.
 - **The Upstream Solution:** Deployed Iwan Kawrakow's upstream `ik_llama.cpp` fork with AVX-VNNI acceleration, Flash Attention (`-fa on`), and asymmetric quantized caching (`q8_0` keys / `q4_0` values).
 - **Inference Profile:** `Ling-3.0-tiny` (7.89B MoE, ~1.3B active parameters). Entire 131,072 context window compressed into **7.48 GB total RAM**. Sustains **39.8 tok/s decode** and 511 tok/s prefill with sub-0.2s TTFT on CPU.
+
+#### Enterprise ROI & Zero-Egress Compliance
+- **Fixed CapEx vs. Metered OpEx:** Standard enterprise laptop procurement (~$3,500–$4,000 USD / 48 GB unified RAM SKU) amortizes to **~$75–$80/month per seat** over a 4-year corporate refresh cycle—replacing volatile cloud token bills with $0.00 marginal cost per token.
+- **Strict Data Residency:** Binds strictly to loopback (`127.0.0.1`). Enables local contract review, HR policy verification, and sensitive infrastructure log triage with zero risk of corporate IP leakage or external provider training.
 
 ---
 
