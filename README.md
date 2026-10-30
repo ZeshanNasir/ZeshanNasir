@@ -1,7 +1,7 @@
 # Zeshan Nasir
 
 **System Administrator at Optimizely · Stockholm, Sweden**  
-Managing enterprise identity, endpoint fleets, and IT service automation across Atlassian Cloud (Jira, JSM, Confluence, Rovo, Risotto), Microsoft Entra ID, Intune, and Jamf Pro.
+Leading Atlassian AI, workflow automation, and documentation governance across Jira, JSM, and Confluence Cloud.
 
 ---
 
