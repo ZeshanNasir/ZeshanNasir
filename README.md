@@ -2,7 +2,7 @@
 
 **System Administrator · Atlassian AI & Automation · Stockholm, Sweden**
 
-Working across enterprise Atlassian systems (Jira, JSM, Confluence), operational knowledge governance, and cloud identity at Optimizely. I automate documentation lifecycles, test workflows in sandboxes, and build tooling to ensure enterprise AI assistants (Atlassian Rovo) retrieve verified ground truth.
+Working across enterprise Atlassian systems (Jira, JSM, Confluence), operational knowledge governance, and cloud identity at Optimizely. I automate documentation lifecycles, test workflows in sandboxes, and build tooling to ensure enterprise AI assistants (Atlassian Rovo, Risotto) retrieve verified ground truth.
 
 ### Public Repositories
 
@@ -10,7 +10,7 @@ Working across enterprise Atlassian systems (Jira, JSM, Confluence), operational
 
 ### Systems & Stack
 
-- **Atlassian Stack:** Confluence Cloud, Jira Service Management, Jira Software, Atlassian Rovo, Automation for Jira, Claude.
+- **Atlassian Stack:** Confluence Cloud, Jira Service Management, Jira Software, Atlassian Rovo, Risotto, Automation for Jira.
 - **Identity & Fleet:** Microsoft Entra ID (Conditional Access, MFA), Okta, Microsoft Intune, Jamf Pro.
 - **Infrastructure & Systems:** Linux, Proxmox VE, Apple Silicon / Metal, WireGuard, Bash, Python, Git.
 
