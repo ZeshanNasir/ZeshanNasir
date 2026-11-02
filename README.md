@@ -33,12 +33,17 @@ From the earlier 2026-10-09 run:
 
 The tool above covers the first machine only.
 
-| | Workstation | Always-on server |
-| :--- | :--- | :--- |
-| **Hardware** | MacBook Pro M4 Pro, 48 GB | Minisforum MS-02 Ultra, Core Ultra 5 |
-| **Runs** | `flint`, `nemotron-3.5-bolt`, through Ollama | `Ling-3.0-tiny`, through `ik_llama.cpp` |
-| **Used for** | Coding and code review | Automation that runs around the clock |
-| **Measured** | First word after 3.6 s for a 3.5K-token prompt. A 48K-token prompt answered correctly in 97 s. 22 GB of model in memory, no swap growth in these runs. | First word after 0.176 s for a short prompt. Set up for a 131K-token context window. |
+### Workstation: MacBook Pro M4 Pro, 48 GB
+
+- **Runs:** `flint` and `nemotron-3.5-bolt`, through Ollama.
+- **Used for:** coding and code review.
+- **Measured:** first word after 3.6 s for a 3.5K-token prompt. A 48K-token prompt answered correctly in 97 s. 22 GB of model in memory, no swap growth in these runs.
+
+### Always-on server: Minisforum MS-02 Ultra, Core Ultra 5
+
+- **Runs:** `Ling-3.0-tiny`, through `ik_llama.cpp`.
+- **Used for:** automation that runs around the clock.
+- **Measured:** first word after 0.176 s for a short prompt. Set up for a 131K-token context window.
 
 > **Cost model:** a $3,500–$4,000 Mac over four years is $73–$83 a month, with no per-token fee for work that runs locally.
 
