@@ -1,18 +1,20 @@
 <img src="assets/banner.svg" alt="Zeshan Nasir. Local AI, measured on real hardware." width="100%">
 
-**System administrator in Stockholm. I test local AI models on my own hardware and publish the raw results.**
+**System administrator in Stockholm. I check what local AI models can really do on a Mac, and publish the raw results.**
 
-## Try it
+## Check a model on your Mac
 
 ```sh
-git clone https://github.com/ZeshanNasir/ai-local.git && cd ai-local && ./lab
+git clone https://github.com/ZeshanNasir/local-model-check.git
+cd local-model-check
+./check
 ```
 
-[ai-local](https://github.com/ZeshanNasir/ai-local) runs one local model through 15 small engineering tasks and prints its speed and how many tasks it passed. It needs a Mac with Apple Silicon, Python 3.10 or newer, and Ollama.
+[local-model-check](https://github.com/ZeshanNasir/local-model-check) runs one model through 15 small engineering tasks and prints how fast it writes and how many tasks it gets right. It uses only the Python standard library, talks only to Ollama on your Mac, and runs model-written code in a sandbox with no network.
 
 ## What it found
 
-Measured with `./lab` on an M4 Pro with 48 GB, 2026-11-02, Ollama 0.40.13. Each model ran every task three times. The raw files are in the repository.
+Measured on an M4 Pro with 48 GB, 2026-11-02, Ollama 0.40.13. Each model ran every task three times. The raw files are in the repository.
 
 | Model | Speed | Tasks passed |
 | :--- | ---: | ---: |
@@ -27,27 +29,18 @@ From the earlier 2026-10-09 run:
 - **Running the tests changes the result.** A model that failed a code fix when answering in one go fixed it in three of three sessions when it could run the tests.
 - **Local is not automatically private.** Ollama stayed on the machine. The coding agent around it also connected to outside servers whose purpose I could not identify.
 
-## Two machines
+## My two machines
 
-[ai-local](https://github.com/ZeshanNasir/ai-local) covers the workstation only. The figures below come from my own test runs and lab, not from that repository.
+The tool above covers the first machine only.
 
-### Workstation · MacBook Pro M4 Pro, 48 GB
+| | Workstation | Always-on server |
+| :--- | :--- | :--- |
+| **Hardware** | MacBook Pro M4 Pro, 48 GB | Minisforum MS-02 Ultra, Core Ultra 5 |
+| **Runs** | `flint`, `nemotron-3.5-bolt`, through Ollama | `Ling-3.0-tiny`, through `llama.cpp` |
+| **Used for** | Coding and code review | Automation that runs around the clock |
+| **Measured** | First word after 3.6 s for a 3.5K-token prompt. A 48K-token prompt answered correctly in 97 s. 22 GB of model in memory, no swap growth in these runs. | First word after 0.176 s. About 7.1 GiB of memory with a 131K-token context window. |
 
-| Metric | Specification |
-| :--- | :--- |
-| **Runtime** | Ollama (MLX), listening on loopback · `flint:40b-a2b-qat-int4` · `nemotron-3.5-bolt:e4b` |
-| **Job** | Interactive engineering: code audit, subagent loops |
-| **Measured** | 3.6 s to first token for a 3.5K-token prompt · a 48K-token prompt answered correctly in 97 s · 22 GB of weights resident, no swap growth in these runs |
-
-### Continuous ops · Minisforum MS-02 Ultra (Core Ultra 5, 6 P-cores)
-
-| Metric | Specification |
-| :--- | :--- |
-| **Runtime** | `ik_llama.cpp` (AVX-VNNI) · `Ling-3.0-tiny` (MoE) |
-| **Job** | 24/7 services: MCP tool-calling, n8n triage, Home Assistant |
-| **Measured** | 0.176 s TTFT · 511 tok/s prefill · 39.8 tok/s decode · 131K context in ~7.1 GiB RAM · ~20 W wall power |
-
-> **Cost model:** A workstation amortized at about $75–$80 per seat per month over 4 years replaces variable token bills with $0.00 marginal cost per token for routine developer loops.
+> **Cost model:** a $3,500–$4,000 Mac over four years is $73–$83 a month, with no per-token fee for work that runs locally.
 
 ---
 
